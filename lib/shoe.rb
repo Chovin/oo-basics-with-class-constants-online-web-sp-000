@@ -9,7 +9,7 @@ class Shoe
   end
   
   def brand=(brand)
-    BRANDS << brand
+    BRANDS << brand unless BRANDS.include? brand
     @brand = brand
   end
 
